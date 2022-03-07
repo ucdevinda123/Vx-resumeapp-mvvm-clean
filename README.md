@@ -99,3 +99,9 @@ Experience List |New Experience | Experience Validator
 <img width="270"  src="https://user-images.githubusercontent.com/4921099/156952960-8dfce6df-41e8-4e10-b515-5a80db1309aa.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156952969-e1600909-abee-490f-b8e3-77c03c754424.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156981587-be71a063-0065-439e-9276-07c2cbdedf2d.png"> 
 
 
+Personal Information |Personal Info Avatar | Personal infor Validator
+--- | --- | --- 
+<img width="270"  src="https://user-images.githubusercontent.com/4921099/156983201-c593a946-25eb-41b7-8660-b7ee879b34f9.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156983272-90459483-d151-4cb9-a46d-2507e50daec2.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156983326-5aafd6fc-f4df-4986-af9c-821bc8f31daa.png"> 
+
+
+
