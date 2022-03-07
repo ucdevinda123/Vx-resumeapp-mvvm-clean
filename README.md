@@ -1,6 +1,3 @@
-# Vx-resumeapp-mvvm-clean
-Vx Resume App for Android 
-
 # Vx Resume Builder App  MVVM + Clean Architecture (Fully Offline)
 This  Android application built using MVVM + Clean Architecture architecture approach and is written 100% in Kotlin.
 App is capable of working fully offline.
@@ -90,3 +87,10 @@ Common : Resource Class
 - **Latest Android Studio** - Done Android Studio Arctic Fox |2020.3.1 Patch 4
 - **Offline Support** - Done
 - **Resume Viewer and generator** - Partially done (Some of the data still needs to pass in to VUE 3)
+
+
+
+
+
+![Screenshot_20220307-090531](https://user-images.githubusercontent.com/4921099/156952960-8dfce6df-41e8-4e10-b515-5a80db1309aa.png)
+![Screenshot_20220307-090527](https://user-images.githubusercontent.com/4921099/156952969-e1600909-abee-490f-b8e3-77c03c754424.png)
