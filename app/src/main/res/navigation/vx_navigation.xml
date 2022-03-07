@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vx_navigation"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/resumeCreation"
+        android:name="com.app.vxresumebuilder.presentation.ui.fragment.resumecreation.ResumeCreation"
+        android:label="Resume Creation">
+
+        <argument
+            android:name="flowFlag"
+            app:argType="com.app.vxresumebuilder.data.dto.enumconst.WorkFlow" />
+
+        <argument
+            android:name="resumeId"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_resumeCreation_to_educationalInformation"
+            app:destination="@id/educationalInformation">
+            <argument
+                android:name="informationDataScreenId"
+                app:argType="integer" />
+
+            <argument
+                android:name="resumeId"
+                app:argType="long" />
+
+            <argument
+                android:name="flowFlag"
+                app:argType="com.app.vxresumebuilder.data.dto.enumconst.WorkFlow" />
+
+            <argument
+                android:name="informationDataId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_resumeCreation_to_educationalInformationList"
+            app:destination="@id/educationalInformationList" />
+        <action
+            android:id="@+id/action_resumeCreation_to_personalInformation"
+            app:destination="@id/personalInformation">
+            <argument
+                android:name="flowFlag"
+                app:argType="com.app.vxresumebuilder.data.dto.enumconst.WorkFlow" />
+
+            <argument
+                android:name="resumeId"
+                app:argType="long" />
+        </action>
+        <action
+            android:id="@+id/action_resumeCreation_to_projectInformation"
+            app:destination="@id/projectInformation">
+
+            <argument
+                android:name="informationDataScreenId"
+                app:argType="integer" />
+
+            <argument
+                android:name="resumeId"
+                app:argType="long" />
+
+            <argument
+                android:name="flowFlag"
+                app:argType="com.app.vxresumebuilder.data.dto.enumconst.WorkFlow" />
+
+            <argument
+                android:name="informationDataId"
+                app:argType="integer" />
+
+        </action>
+        <action
+            android:id="@+id/action_resumeCreation_to_workExperience"
+            app:destination="@id/workExperience">
+
+            <argument
+                android:name="informationDataScreenId"
+                app:argType="integer" />
+
+            <argument
+                android:name="resumeId"
+                app:argType="long" />
+
+            <argument
+                android:name="flowFlag"
+                app:argType="com.app.vxresumebuilder.data.dto.enumconst.WorkFlow" />
+
+            <argument
+                android:name="informationDataId"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_resumeCreation_to_resumeViewer"
+            app:destination="@id/resumeViewer" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.app.vxresumebuilder.presentation.ui.fragment.home.Home"
+        android:label="Home" >
+        <argument android:name="flowFlag"
+            app:argType="com.app.vxresumebuilder.data.dto.enumconst.WorkFlow"
+            />
+
+        <action
+            android:id="@+id/action_home_to_resumeCreation"
+            app:destination="@id/resumeCreation">
+
+            <argument
+                android:name="flowFlag"
+                app:argType="com.app.vxresumebuilder.data.dto.enumconst.WorkFlow" />
+
+            <argument
+                android:name="resumeId"
+                app:argType="long" />
+
+        </action>
+        <action
+            android:id="@+id/action_home_to_resumeViewer"
+            app:destination="@id/resumeViewer" />
+    </fragment>
+    <fragment
+        android:id="@+id/educationalInformation"
+        android:name="com.app.vxresumebuilder.presentation.ui.fragment.education.EducationalInformation"
+        android:label="Educational Information" >
+
+        <argument
+            android:name="resumeId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/educationalInformationList"
+        android:name="com.app.vxresumebuilder.presentation.ui.fragment.informationdata.InformationDataList"
+        android:label="EducationalInformationList" />
+    <fragment
+        android:id="@+id/personalInformation"
+        android:name="com.app.vxresumebuilder.presentation.ui.fragment.personal.PersonalInformation"
+        android:label="PersonalInformation">
+
+        <argument
+            android:name="flowFlag"
+            app:argType="com.app.vxresumebuilder.data.dto.enumconst.WorkFlow" />
+
+        <argument
+            android:name="resumeId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/resumeViewer"
+        android:name="com.app.vxresumebuilder.presentation.ui.fragment.resumeviewer.ResumeViewer"
+        android:label="ResumeViewer" />
+    <fragment
+        android:id="@+id/projectInformation"
+        android:name="com.app.vxresumebuilder.presentation.ui.fragment.project.ProjectInformation"
+        android:label="Project Information" >
+        <action
+            android:id="@+id/action_projectInformation_to_resumeViewer"
+            app:destination="@id/resumeViewer">
+            <argument
+                android:name="resumeId"
+                app:argType="long" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/workExperience"
+        android:name="com.app.vxresumebuilder.presentation.ui.fragment.workexperience.WorkExperience"
+        android:label="Work Experience" />
+</navigation>

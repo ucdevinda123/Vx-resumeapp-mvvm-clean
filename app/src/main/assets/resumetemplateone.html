@@ -1,0 +1,297 @@
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="target-densitydpi=high-dpi" />
+  <title>Resume/CV</title>
+  <!-- Bootstrap CSS -->
+  <script src="js/vue/vue.global.js"></script>
+  <link
+          href="css/lib/bootstrap.min.css"
+          rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/custom.css"/>
+  <link
+          rel="stylesheet"
+          href="css/lib/bootstrap-icons.css"
+  />
+
+</head>
+
+<body>
+<div  id="app">
+  <section class="container-fluid">
+    <header class="header position-relative">
+      <div class="row">
+        <div class="col">
+          <animatable-component
+                  autoplay
+                  animation="fadeInLeft"
+                  easing="ease-in-out"
+                  duration="1200"
+          >
+            <h1 class="firstName text-break"> {{ resume.firstName }} </h1>
+          </animatable-component>
+          <animatable-component
+                  autoplay
+                  animation="fadeInDown"
+                  easing="ease-in-out"
+                  duration="1200"
+          >
+            <h2 class="lastName text-nowrap"> {{ resume.lastName }} </h2>
+          </animatable-component>
+          <animatable-component
+                  autoplay
+                  animation="fade-in-left"
+                  easing="ease-in-out"
+                  duration="1200"
+          >
+            <p class="jobTitle">
+              <i class="bi bi-circle-fill"></i>
+              <span class="text-break"> {{ resume.jobTitle }} </span>
+            </p>
+          </animatable-component>
+        </div>
+        <div
+                v-if="!!resume.photo"
+                class="col d-lg-block d-print-block"
+        >
+
+            <img
+                    v-bind:src.prop="resume.photo"
+                    class="photo border border-2 border-dark rounded-circle img-fluid float-end img-thumbnail"
+            />
+        </div>
+      </div>
+      <animatable-component
+              autoplay
+              animation="fadeInUpBig"
+              easing="ease-in-out"
+              duration="1200"
+      >
+        <div class="middleLine position-absolute"></div>
+      </animatable-component>
+    </header>
+    <section class="content">
+      <div class="row">
+        <div class="col personal-details me-4">
+          <div class="row list-item me-5">
+            <div class="col-auto">
+              <animatable-component
+                      autoplay
+                      animation="heartBeat"
+                      easing="ease-in"
+                      duration="1200"
+              >
+                <div class="icon d-flex justify-content-center">
+                  <i
+                          class="bi bi-geo-alt-fill"
+                          role="img"
+                          aria-label="Location"
+                  ></i>
+                </div>
+              </animatable-component>
+            </div>
+            <div class="col" style="white-space: pre-line">
+              <p>{{ resume.address }}</p>
+            </div>
+          </div>
+          <div v-if="!!resume.phone" class="row list-item me-5">
+            <div class="col-auto align-self-center">
+              <animatable-component
+                      autoplay
+                      animation="swing"
+                      easing="ease-in"
+                      duration="1200"
+              >
+                <div class="icon d-flex justify-content-center">
+                  <i
+                          class="bi bi-telephone-fill"
+                          role="img"
+                          aria-label="Telephone"
+                  ></i>
+                </div>
+              </animatable-component>
+            </div>
+            <div class="col">
+              <a
+                      v-bind:href="'tel:'+ resume.phone"
+                      class="text-decoration-none"
+              >
+                <p>{{ resume.phone }}</p>
+              </a>
+            </div>
+          </div>
+          <div class="row list-item me-5">
+            <div class="col-auto align-self-center">
+              <animatable-component
+                      autoplay
+                      animation="flip"
+                      easing="ease-in"
+                      duration="1200"
+              >
+                <div class="icon d-flex justify-content-center">
+                  <i
+                          class="bi bi-envelope-fill"
+                          role="img"
+                          aria-label="Email"
+                  ></i>
+                </div>
+              </animatable-component>
+            </div>
+            <div class="col">
+              <a
+                      v-bind:href="'mailto:'+ resume.email"
+                      class="text-decoration-none"
+              >
+                <p>{{ resume.email }}</p>
+              </a>
+            </div>
+          </div>
+          <div class="row mt-5 me-5">
+            <div class="col">
+              <p class="title">Education</p>
+            </div>
+          </div>
+          <div class="row record" v-for="e in resume.education">
+            <div class="col-auto bullet">
+              <i class="bi bi-record-circle"></i>
+            </div>
+            <div class="col">
+              <p class="fw-bold text-uppercase"> {{ e.degree }} </p>
+              <p class="fw-bold text-uppercase">
+                {{ e.school }}, {{ e.graduationDate }}
+              </p>
+              <p>{{ e.description }}</p>
+            </div>
+          </div>
+          <div class="row mt-5 me-5">
+            <div class="col p-0">
+              <p class="title">Links</p>
+            </div>
+          </div>
+
+          <ul class="ms-2">
+            <li class="pb-2" v-for="l in resume.links">
+              <a class="text-reset" target="_blank" v-bind:href.prop="l.link"
+              >{{ l.label }}
+              </a>
+            </li>
+          </ul>
+          <div class="row mt-5 me-5">
+            <div class="col p-0">
+              <p class="title">Skills</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul class="ms-2">
+                <li class="pb-2" v-for="skill in resume.skills">
+                  {{ skill }}
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-5 me-5">
+            <div class="col p-0">
+              <p class="title">Languages</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul class="ms-2">
+                <li class="pb-2" v-for="language in resume.languages">
+                  {{ language }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col col-8">
+          <animatable-component
+                  autoplay
+                  animation="fade-in-right"
+                  easing="ease-in-out"
+                  duration="1200"
+          >
+            <div class="row bullet">
+              <div class="col-auto pt-2">
+                <i class="bi bi-circle-fill"></i>
+              </div>
+              <div class="col">
+                <p class="title">About Me</p>
+              </div>
+            </div>
+          </animatable-component>
+          <animatable-component
+                  autoplay
+                  animation="fade-in-right"
+                  easing="ease-in-out"
+                  duration="1200"
+          >
+            <div class="row record bullet">
+              <div class="col-auto">
+                <i class="bi bi-record-circle"></i>
+              </div>
+              <div class="col">
+                <p style="white-space: pre-line"
+                >{{ resume.professionalSummary }}</p
+                >
+              </div>
+            </div>
+          </animatable-component>
+          <div class="row mt-5">
+            <div class="col-auto bullet pt-2">
+              <i class="bi bi-circle-fill"></i>
+            </div>
+            <div class="col">
+              <p class="title">Work Experience</p>
+            </div>
+          </div>
+          <div
+                  class="row record mb-4 bullet"
+                  v-for="employment in resume.employmentHistory"
+          >
+            <div class="col-auto">
+              <i class="bi bi-record-circle"></i>
+            </div>
+            <div class="col">
+              <p class="text-uppercase fw-bold position-relative">
+                {{ employment.jobTitle }}
+                <span
+                >&nbsp;|&nbsp;{{ employment.startDate }} - {{
+                      employment.endDate }}</span
+                >
+              </p>
+              <p class="text-lowercase fst-italic fw-bold">
+                {{ employment.employer }}, {{ employment.city }}
+              </p>
+              <p class="mb-0" v-for="achievement in employment.achievements">
+                • {{ achievement }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <div class="btn-group-fab d-print-none">
+    <div>
+      <button
+              onclick="javascript:window.print()"
+              type="button"
+              class="btn btn-main btn-primary btn-print"
+              title="Print"
+      >
+        <i class="bi bi-printer fs-3"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<script
+        src="js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

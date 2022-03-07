@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_add_resume.xml" value="0.2537037037037037" />
+        <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.18489583333333334" />
+        <entry key="app/src/main/res/drawable/rounded_btn_nagative.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/drawable/rounded_edit_text.xml" value="0.24537037037037038" />
+        <entry key="app/src/main/res/drawable/status_indicator.xml" value="0.23703703703703705" />
+        <entry key="app/src/main/res/drawable/status_indicator_pending.xml" value="0.12447916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/dialog_resume_information.xml" value="0.13541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_add_educational_information.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/fragment_add_personal_information.xml" value="0.15172239108409322" />
+        <entry key="app/src/main/res/layout/fragment_add_project_information.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/fragment_add_work_experience_information.xml" value="0.17239583333333333" />
+        <entry key="app/src/main/res/layout/fragment_cv_creation.xml" value="0.182518115942029" />
+        <entry key="app/src/main/res/layout/fragment_education_list.xml" value="0.15172239108409322" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.15172239108409322" />
+        <entry key="app/src/main/res/layout/fragment_information_list.xml" value="0.2572463768115942" />
+        <entry key="app/src/main/res/layout/fragment_personal_information.xml" value="0.15172239108409322" />
+        <entry key="app/src/main/res/layout/fragment_resume_creation.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/fragment_resume_viewer.xml" value="0.13120567375886524" />
+        <entry key="app/src/main/res/layout/item_education_list.xml" value="0.15172239108409322" />
+        <entry key="app/src/main/res/layout/item_home_resume_list.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/item_information_data_list.xml" value="0.18541666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
