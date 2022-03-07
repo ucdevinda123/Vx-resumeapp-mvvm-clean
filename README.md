@@ -89,6 +89,10 @@ Common : Resource Class
 - **Resume Viewer and generator** - Partially done (Some of the data still needs to pass in to VUE 3)
 
 
+## Screenshots
+Home |CreateResume | Home List
+--- | --- | --- 
+<img width="270"  src="https://user-images.githubusercontent.com/4921099/156979884-76e19a6a-15c4-49e9-b00e-de5d35e44184.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156980141-bb710353-53cc-4a37-a9ab-8a4e1b2e960f.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156980540-df7a52b1-9786-4f0a-b62a-2e2edb79a76a.png"> 
 
 
 
