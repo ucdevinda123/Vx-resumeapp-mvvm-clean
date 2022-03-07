@@ -103,5 +103,12 @@ Personal Information |Personal Info Avatar | Personal infor Validator
 --- | --- | --- 
 <img width="270"  src="https://user-images.githubusercontent.com/4921099/156983201-c593a946-25eb-41b7-8660-b7ee879b34f9.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156983272-90459483-d151-4cb9-a46d-2507e50daec2.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156983326-5aafd6fc-f4df-4986-af9c-821bc8f31daa.png"> 
 
+Education List Empty |New Education | Education List with data
+--- | --- | --- 
+<img width="270"  src="https://user-images.githubusercontent.com/4921099/156987964-3a6ee353-c72b-45ef-bd85-1427d053a883.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156988175-0f8aa021-91e4-459b-998c-7bb0624120d8.png"> | <img width="270"  src="https://user-images.githubusercontent.com/4921099/156988294-28ee0884-ebfb-46e4-9c78-2f6a1b7df166.png"> 
+
+
+
+
 
 
