@@ -3,7 +3,7 @@ This  Android application built using MVVM + Clean Architecture architecture app
 App is capable of working fully offline.
 App will be using my html template powered By VUE3.JS
 
-# Architecture behind the app:
+# Architecture behind the app0:
 
 Presentation Layer :   UI (Activity,Fragment) and ViewModel
 Domain Layer :  UseCases and Abstract repository interface
